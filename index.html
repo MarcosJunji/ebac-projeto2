@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contatos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!-- CRIAÇÃO DO HEADER -->
+    <div class="container">
+        <header>
+            <ion-icon name="person-add-outline"></ion-icon>
+            <h1>Lista de contatos</h1>
+            <img src="img/logo-ebac.png" alt="Logo Ebac">
+        </header>
+        <!-- FORMS DE CADASthO NOVO NÚMERO -->
+        <form id="cadastra-numero">
+            <input type="text" id="nome" required placeholder="Nome">
+            <input type="text" id="cidade" required placeholder="Cidade">
+            <input type="tel" id="telefone" required placeholder="Telefone">
+            <button type="submit" id="adicionar-numero">Adicionar número</button>
+        </form>
+        <!-- TABELA DE CADASTRO DO NÚMERO -->
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome cadastrado
+                    </th>
+                    <th>
+                        Cidade
+                    </th>
+                    <th>
+                        Telefone cadastrado
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+        
+    <!-- LINK Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
